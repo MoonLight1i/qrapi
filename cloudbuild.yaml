@@ -1,0 +1,10 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'gcr.io/helpful-binder-429515-u1/My First Project', '.']
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'gcr.io/helpful-binder-429515-u1/My First Project']
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args: ['run', 'deploy', 'My First Project', '--image', 'gcr.io/helpful-binder-429515-u1/My First Project', '--platform', 'managed', '--region', 'us-central1']
+
+images:
+  - 'gcr.io/helpful-binder-429515-u1/My First Project'
