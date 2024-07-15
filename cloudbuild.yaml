@@ -8,3 +8,6 @@ steps:
 
 images:
   - 'gcr.io/helpful-binder-429515-u1/My First Project'
+
+  options:
+  logging: NONE
