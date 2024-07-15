@@ -11,4 +11,4 @@ images:
 
 options:
   logging:
-    logsBucket: bucketlogs18
+    logsBucket: logsbucket18
