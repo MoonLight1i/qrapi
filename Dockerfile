@@ -6,3 +6,6 @@ COPY . /var/www/html/
 
 # Expone el puerto 80 para que la aplicación esté disponible en HTTP
 EXPOSE 80
+
+# Instala las dependencias necesarias
+RUN docker-php-ext-install mysqli
