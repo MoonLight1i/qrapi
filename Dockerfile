@@ -1,5 +1,5 @@
 # Usa la imagen base de PHP con Apache
-FROM php:7.4-apache
+FROM php:8.0-apache
 
 # Copia todos los archivos de tu proyecto al directorio raíz del servidor web
 COPY . /var/www/html/
