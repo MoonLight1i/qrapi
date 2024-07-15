@@ -10,4 +10,5 @@ images:
   - 'gcr.io/helpful-binder-429515-u1/qr-cloud-api'
 
 options:
-  logging: NONE
+  logging:
+    logsBucket: bucketlogs18
