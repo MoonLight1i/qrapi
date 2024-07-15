@@ -1,13 +1,13 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'gcr.io/helpful-binder-429515-u1/My First Project', '.']
+    args: ['build', '-t', 'gcr.io/helpful-binder-429515/my-first-project', '.']
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'gcr.io/helpful-binder-429515-u1/My First Project']
+    args: ['push', 'gcr.io/helpful-binder-429515/my-first-project']
   - name: 'gcr.io/cloud-builders/gcloud'
-    args: ['run', 'deploy', 'My First Project', '--image', 'gcr.io/helpful-binder-429515-u1/My First Project', '--platform', 'managed', '--region', 'us-central1']
+    args: ['run', 'deploy', 'my-first-project', '--image', 'gcr.io/helpful-binder-429515/my-first-project', '--platform', 'managed', '--region', 'us-central1']
 
 images:
-  - 'gcr.io/helpful-binder-429515-u1/My First Project'
+  - 'gcr.io/helpful-binder-429515/my-first-project'
 
-  options:
+options:
   logging: NONE
