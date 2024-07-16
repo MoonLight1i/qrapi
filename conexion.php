@@ -1,9 +1,9 @@
 <?php
 
-$dbHost = "bnkmhfbejtjb7spgoo9y-mysql.services.clever-cloud.com"; // Puedes usar la IP de tu instancia de Cloud SQL
-$dbName = "bnkmhfbejtjb7spgoo9y";
-$dbUser = "u9vnum12sjerze2e";
-$dbPass = "mtFb4ZZOkfFc3ACB30W4";
+$dbHost = "34.16.51.17"; // Puedes usar la IP de tu instancia de Cloud SQL
+$dbName = "helpful-binder-429515-u1:us-central1:qrdatabase";
+$dbUser = "root";
+$dbPass = "Camila18.";
 
 // Conexión a la base de datos
 $mysqli = new mysqli($dbHost, $dbUser, $dbPass, $dbName);
