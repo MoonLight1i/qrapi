@@ -1,6 +1,6 @@
 <?php
 
-$dbHost = "189.135.52.166"; // Puedes usar la IP de tu instancia de Cloud SQL
+$dbHost = "34.16.51.17"; // Puedes usar la IP de tu instancia de Cloud SQL
 $dbName = "testtrabajadores";
 $dbUser = "root";
 $dbPass = "Camila18.";
