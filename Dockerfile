@@ -9,6 +9,9 @@ COPY . /var/www/html/
 # WORKDIR /var/www/html
 # RUN composer install
 
+# Instala la extensión mysqli
+RUN docker-php-ext-install mysqli
+
 # Exponer el puerto 8080
 EXPOSE 8080
 
