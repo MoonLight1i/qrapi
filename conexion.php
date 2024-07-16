@@ -10,7 +10,7 @@ $mysqli = new mysqli($dbHost, $dbUser, $dbPass, $dbName);
 
 // Verifica la conexión
 if ($mysqli->connect_error) {
-    die("Error de conexión: " . $mysqli->connect_error);
+    die("Error de conexión2: " . $mysqli->connect_error);
 } else {
     echo "Conexión exitosa a la base de datos en Google Cloud SQL";
 }
